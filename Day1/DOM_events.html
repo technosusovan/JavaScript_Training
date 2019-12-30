@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <input type="text" onblur="change()" onfocus="colChange()">
+
+        <script>
+            function change() {
+                var ele = document.getElementsByTagName("input");
+                ele[0].value = ele[0].value.toUpperCase();
+                ele[0].style.background = "yellow";
+            }
+            function colChange() {
+                var ele = document.getElementsByTagName("input");
+                ele[0].style.background = "grey";
+            }
+        </script>
+    </body>
+</html>
