@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/jasmine-html.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.5.0/boot.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var Calculator = function(){
+                return{
+                    add : function(num1, num2){
+                        return (num1+num2)
+                    }
+                };
+            };
+
+            describe('calculatorSuite', function() {
+                var calci = new Calculator();
+                it('Addition of two numbers', function() {
+                    expect(calci.add(5,10)).toBe(15)
+                });
+            });
+        </script>
+    </body>
+</html>
